@@ -29,7 +29,7 @@ This project implements a real-time hand gesture interpreter that not only detec
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/deepikaksr/hand_gesture_interpreter.git   
+git clone https://github.com/deepikaksr/hand_gesture_interpreter.git  
 cd hand_gesture_interpreter
 
 3. Set the dependencies:
