@@ -1,27 +1,36 @@
+# Hand Gesture Interpreter System
 
-# Hand Landmark Detection System
-
-This project implements real-time detection of hand landmarks (such as fingertips and finger joints) using Mediapipe and OpenCV.
-
-## Overview
-This system detects and visualizes 21 keypoints on each hand, allowing further development of gesture recognition, virtual interaction, and other interactive computer vision applications.
+This project implements a real-time hand gesture interpreter that not only detects hand landmarks using MediaPipe and OpenCV but also interprets hand gestures into numbers and their corresponding meanings. The system leverages a CSV dataset for digit recognition (using a k‑NN classifier) and a custom-trained Teachable Machine Keras model for gesture meaning interpretation.
 
 ## Features
-- Real-time hand landmark detection using webcam
-- Visualization of detected hand landmarks
-- Identification and marking of fingertips
+•⁠  ⁠Real-time hand landmark detection using webcam
+•⁠  ⁠Visualization of detected hand landmarks
+•⁠  ⁠Digit recognition using a k‑NN classifier based on CSV dataset
+•⁠  ⁠Gesture meaning interpretation using a Teachable Machine Keras model
+•⁠  ⁠Smoothing of predictions to enhance reliability
 
 ## Requirements
 - Python 3.6 or higher
 - OpenCV
 - Mediapipe
 - NumPy
+- TensorFlow
+- scikit-learn
+
+## Project Structure
+- **dataset_numbers.csv** - Dataset file containing landmark coordinates and digit labels  
+- **hand_landmark_detection.py** - Main script for real-time hand gesture interpretation  
+- **requirements.txt** - List of Python dependencies for the project  
+- **README.md** - Project documentation  
+- **converted_keras/** - Directory containing the Teachable Machine Keras model and labels  
+  - **keras_model.h5** - Trained Keras model file  
+  - **labels.txt** - File containing the model's class labels
 
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/deepikaksr/hand-landmark-detection.git
-cd hand-landmark-detection
+git clone https://github.com/deepikaksr/hand-gesture-interpreter.git     
+cd hand_gesture_interpreter
 
 3. Set the dependencies:
 pip install -r requirements.txt
@@ -30,30 +39,3 @@ pip install -r requirements.txt
 Run the hand landmark detection script using : python3 hand_landmark_detection.py
 
 Press `q` to quit the webcam window.
-
-
-## Hand Landmark Index Reference (Mediapipe): 
-
-| Landmark ID | Landmark Description |
-|-------------|----------------------|
-| 0           | Wrist                |
-| 1           | Thumb_CMC            |
-| 2           | Thumb_MCP            |
-| 3           | Thumb_IP             |
-| 4           | Thumb_Tip            |
-| 5           | Index_Finger_MCP     |
-| 6           | Index_Finger_PIP     |
-| 7           | Index_Finger_DIP     |
-| 8           | Index_Finger_Tip     |
-| 9           | Middle_Finger_MCP    |
-| 10          | Middle_Finger_PIP    |
-| 11          | Middle_Finger_DIP    |
-| 12          | Middle_Finger_Tip    |
-| 13          | Ring_Finger_MCP      |
-| 14          | Ring_Finger_PIP      |
-| 15          | Ring_Finger_DIP      |
-| 16          | Ring_Finger_Tip      |
-| 17          | Pinky_MCP            |
-| 18          | Pinky_PIP            |
-| 19          | Pinky_DIP            |
-| 20          | Pinky_Tip            |
