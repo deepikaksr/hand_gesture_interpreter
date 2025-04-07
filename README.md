@@ -3,11 +3,11 @@
 This project implements a real-time hand gesture interpreter that not only detects hand landmarks using MediaPipe and OpenCV but also interprets hand gestures into numbers and their corresponding meanings. The system leverages a CSV dataset for digit recognition (using a k‑NN classifier) and a custom-trained Teachable Machine Keras model for gesture meaning interpretation.
 
 ## Features
-•⁠  ⁠Real-time hand landmark detection using webcam
-•⁠  ⁠Visualization of detected hand landmarks
-•⁠  ⁠Digit recognition using a k‑NN classifier based on CSV dataset
-•⁠  ⁠Gesture meaning interpretation using a Teachable Machine Keras model
-•⁠  ⁠Smoothing of predictions to enhance reliability
+- ⁠Real-time hand landmark detection using webcam
+- Visualization of detected hand landmarks
+- ⁠Digit recognition using a k‑NN classifier based on CSV dataset
+- ⁠Gesture meaning interpretation using a Teachable Machine Keras model
+- ⁠Smoothing of predictions to enhance reliability
 
 ## Requirements
 - Python 3.6 or higher
@@ -29,7 +29,7 @@ This project implements a real-time hand gesture interpreter that not only detec
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/deepikaksr/hand-gesture-interpreter.git     
+git clone https://github.com/deepikaksr/hand_gesture_interpreter.git   
 cd hand_gesture_interpreter
 
 3. Set the dependencies:
