@@ -1,0 +1,13 @@
+0 Good Job, Well Done
+1 Bad
+2 Okay, Fine, Super
+3 Peace, Victory
+4 Power, Strength
+5 Stop, Halt, Hi-fi
+6 Pointing
+7 Please, Thank You
+8 Call Me
+9 Love
+10 Luck, Hope
+11 Live Long & Prosper
+12 Rock
