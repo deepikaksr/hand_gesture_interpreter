@@ -20,9 +20,10 @@ This system detects and visualizes 21 keypoints on each hand, allowing further d
 ## Installation
 
 1. Clone the repository:
-git clone https://github.com/deepikaksr/hand-landmark-detection.git cd hand-landmark-detection
+git clone https://github.com/deepikaksr/hand-landmark-detection.git
+cd hand-landmark-detection
 
-2. Set the dependencies:
+3. Set the dependencies:
 pip install -r requirements.txt
 
 ## Usage
